@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright(c)2018-2020, 赵鹏阳
+  ~ 项目名称:Yearn 文件名称:log4j2.xml
+  ~ Date:2020/1/1 下午9:21
+  ~ Author: 赵鹏阳
+  -->
+
+<!--日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
+<!-- status log4j2内部日志级别 -->
+<configuration status="INFO">
+    <!-- 全局参数 -->
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p %c{1}:%L -%m%n</Property>
+        <Property name="displayName">yearn-engine</Property>
+    </Properties>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout>
+                <pattern>${pattern}</pattern>
+
+            </PatternLayout>
+        </Console>
+        <!-- 文件 每次运行程序会自动清空，由append属性决定 -->
+        <File name="error" fileName="d://logs/${displayName}_error.log" append="false">
+            <!-- 指定error 级别的日志 -->
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT"
+                             onMismatch="DENY" />
+            <PatternLayout>
+                <pattern>${pattern}</pattern>
+            </PatternLayout>
+        </File>
+        <!-- 滚动文件 -->
+        <RollingFile name="rollingFile" fileName="d://logs/${displayName}.log"
+                     filePattern="d://logs/${displayName}_%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <charset>UTF-8</charset>
+                <pattern>${pattern}</pattern>
+            </PatternLayout>
+            <!-- 按大小划分 -->
+            <SizeBasedTriggeringPolicy size="50 MB" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- <AsyncLogger name="org.apache.catalina.util.LifecycleBase" level="ERROR"
+            /> <AsyncLogger name="org.apache.coyote.http11.Http11NioProtocol" level="WARN"
+            /> <AsyncLogger name="org.apache.tomcat.util.net.NioSelectorPool" level="WARN"
+            /> -->
+        <AsyncLogger name="org.springframework" level="WARN" />
+        <AsyncLogger name="com.xuweihao" level="DEBUG" />
+        <AsyncRoot level="ERROR">
+            <AppenderRef ref="console"></AppenderRef>
+            <AppenderRef ref="error"></AppenderRef>
+            <AppenderRef ref="rollingFile"></AppenderRef>
+        </AsyncRoot>
+    </Loggers>
+</configuration>

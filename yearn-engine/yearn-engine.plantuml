@@ -1,0 +1,644 @@
+@startuml
+
+title __YEARN-ENGINE's Class Diagram__\n
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.factory {
+      class AdjPFactory {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      class AdvPhrasesSet {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.corpus {
+      class Author {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.relation.entity {
+        class Basis {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.corpus {
+      class Book {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.corpus {
+      class BookPart {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class Bool {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.common {
+      enum BotMode {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.relation.entity {
+        class Cause {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.service {
+      class ChSentenceService {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.service {
+      class ChWordService {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.facade {
+      class Chatbot {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class ClassUtil {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.factory {
+      class ClauseFactory {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class CollinsDictUtil {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dictcollins {
+        class CollinsExplainItem {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.rules.dict.common {
+      enum CollinsPOS {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.rules.dict.common {
+      class CommonDictSense {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.service {
+      class ComprehendEngine {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.knowledge {
+      class Concept {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.rules.knowledgeConnect {
+      class ConceptMatcher {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.common {
+      class Constants {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      enum Constituent {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.knowledge {
+      class Definition {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        class DictInitializer {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.common {
+      class EnMarkConstants {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        class EsRepository {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.rules.dict.common {
+      class Example {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.knowledge {
+      class Example {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class FileUtils {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.modifier.adj {
+        enum GoodLevel {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      class HttpClient {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      class LogAspect {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class Match {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class MdDictUtil {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class MdUtils {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class Must {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.factory {
+      class NounPhraseFactory {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      enum NounTag {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      class NounsSet {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      enum POS {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      class POSRules {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.rules.dict.items {
+      class PPDict {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.parser {
+      class ParagraphParser {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.service {
+      class PhraseService {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.factory {
+      class PredicateFactory {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      class PredicateVerbs {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.knowledge {
+      class Property {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class Query {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.noun {
+        package com.zpy.yearn.dict.noun.vtAble {
+          interface Referrable {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.common {
+      class RegexConstants {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.noun {
+        class Rule {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class SearchBody {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class SenseClassMap {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.rules.dict.yearn {
+      enum SenseField {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.sense {
+      enum SenseField {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.parser {
+      class SentenceParser {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class SentenceUtils {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class SpringUtil {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.noun {
+        interface State {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.relation.entity {
+        interface State {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.pos {
+      enum TEnum {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.dict {
+      package com.zpy.yearn.dict.relation.verb {
+        class Target {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.repository {
+        package com.zpy.yearn.techFacilities.repository.searchBody {
+          class Term {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.structure.sense {
+      enum VarType {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    class YearnApplication {
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.techFacilities {
+      package com.zpy.yearn.techFacilities.controller {
+        class YearnController {
+        }
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.service {
+      class YearnWordService {
+      }
+    }
+  }
+  
+
+  package com.zpy.yearn {
+    package com.zpy.yearn.utils {
+      class YoudaoDictUtil {
+      }
+    }
+  }
+  
+
+  AdjPFactory -up-|> ThingFactory
+  Book o-- Author : author
+  ChSentenceService -up-|> LabeledScoredTreeNode
+  ChSentenceService o-- ClauseFactory : clauseFactory
+  Chatbot o-- BotMode : mode
+  Chatbot o-- ChSentenceService : chSentenceService
+  ClauseFactory o-- YearnWordService : yearnWordService
+  ClauseFactory o-- ChSentenceService : chSentenceService
+  ClauseFactory o-- NounPhraseFactory : nounPhraseFactory
+  ClauseFactory o-- PredicateFactory : predicateFactory
+  CommonDictSense o-- CollinsPOS : collinsPOS
+  EsRepository o-- HttpClient : httpClient
+  Match -up-|> HashMap
+  Must o-- Match : match
+  NounPhraseFactory -up-|> ThingFactory
+  NounPhraseFactory o-- YearnWordService : yearnWordService
+  PredicateFactory -up-|> ThingFactory
+  PredicateFactory o-- YearnWordService : yearnWordService
+  Query o-- Bool : bool
+  Query o-- Term : term
+  SearchBody o-- Query : query
+  Term -up-|> HashMap
+  YearnController o-- Chatbot : chatbot
+  YearnController o-- ChSentenceService : chSentenceService
+  YearnWordService o-- EsRepository : esRepository
+  YearnWordService o-- DictInitializer : dictInitializer
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

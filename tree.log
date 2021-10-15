@@ -1,0 +1,23 @@
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[WARNING] 'dependencies.dependency.systemPath' for edu.stanford.nlp:stanford-parser:jar should use a variable instead of a hard-coded path /media/zpy/cbd_drive/jars/stanford-parser.jar @ com.zpy:yearn-pennTree:[unknown-version], H:\rsai\projects\Yearn\yearn-pennTree\pom.xml, line 56, column 25
+[WARNING] 'dependencies.dependency.systemPath' for edu.stanford.nlp:stanford-segmenter:jar should use a variable instead of a hard-coded path /media/zpy/cbd_drive/jars/stanford-segmenter-3.9.1.jar @ com.zpy:yearn-pennTree:[unknown-version], H:\rsai\projects\Yearn\yearn-pennTree\pom.xml, line 63, column 25
+[WARNING] 'dependencies.dependency.systemPath' for javaml:javaml:jar should use a variable instead of a hard-coded path /media/zpy/cbd_drive/jars/javaml-0.1.7/javaml-0.1.7.jar @ com.zpy:yearn-pennTree:[unknown-version], H:\rsai\projects\Yearn\yearn-pennTree\pom.xml, line 70, column 25
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.zpy:yearn-common:jar -> version (?) vs 1.1-SNAPSHOT @ com.zpy:yearn-pennTree:[unknown-version], H:\rsai\projects\Yearn\yearn-pennTree\pom.xml, line 72, column 21
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ com.zpy:yearn-pennTree:[unknown-version], H:\rsai\projects\Yearn\yearn-pennTree\pom.xml, line 15, column 21
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.zpy:yearn-common:jar -> version (?) vs 1.1-SNAPSHOT @ com.zpy:yearn-engine:[unknown-version], H:\rsai\projects\Yearn\yearn-engine\pom.xml, line 146, column 21
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ com.zpy:yearn-engine:[unknown-version], H:\rsai\projects\Yearn\yearn-engine\pom.xml, line 26, column 21
+ @ 
+[ERROR] The build could not read 2 projects -> [Help 1]
+[ERROR]   
+[ERROR]   The project com.zpy:yearn-pennTree:1.1-SNAPSHOT (H:\rsai\projects\Yearn\yearn-pennTree\pom.xml) has 1 error
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ com.zpy:yearn-pennTree:[unknown-version], H:\rsai\projects\Yearn\yearn-pennTree\pom.xml, line 15, column 21
+[ERROR]   
+[ERROR]   The project com.zpy:yearn-engine:1.1-SNAPSHOT (H:\rsai\projects\Yearn\yearn-engine\pom.xml) has 1 error
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ com.zpy:yearn-engine:[unknown-version], H:\rsai\projects\Yearn\yearn-engine\pom.xml, line 26, column 21
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException

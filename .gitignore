@@ -1,0 +1,5 @@
+/.idea
+/doc/.idea
+target
+*.zip
+*.jar
